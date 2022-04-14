@@ -1,3 +1,5 @@
+//Global variables so they don't need to be redefined in next and previous
+
 let images_links = {
   1: "eaton.jpg",
   2: "leep.jpg",
@@ -16,6 +18,7 @@ let image_names = {
 
 let current_image = 1;
 
+//Hides the non-selected exercises and shows the selected
 function load_exercise(exercise)
 {
   let exercises = {1: "validator",
@@ -38,6 +41,7 @@ function load_exercise(exercise)
   }
 }
 
+//validates password based on assignment criteria
 function validate_pass() {
   let form = document.getElementById("validator_form");
   let password = form.elements[0].value;
@@ -56,6 +60,7 @@ function validate_pass() {
   return false;
 }
 
+//switchces from slideshow landing page to the actual images
 function load_slideshow() {
   let slideshow = document.getElementById("slideshow");
   let images = document.getElementById("image_div");
@@ -63,7 +68,7 @@ function load_slideshow() {
   images.style.display = "block";
 
 }
-
+//Progresses slideshow. Loops to beginning if at the end
 function next()
 {
   image_div = document.getElementById("image_div");
@@ -79,7 +84,7 @@ function next()
   title.innerHTML = image_names[current_image];
   source.src = "./imgs/" + images_links[current_image];
 }
-
+//Regresses slideshow. Loops to end if at the beginning
 function previous()
 {
   image_div = document.getElementById("image_div");
@@ -96,6 +101,7 @@ function previous()
   source.src = "./imgs/" + images_links[current_image];
 }
 
+//Handles form data to change css values
 function change_css()
 {
   let form = document.getElementById("selector_form");
