@@ -4,7 +4,7 @@ function load_exercise(exercise)
                    2: "slideshow",
                    3: "profile",
                    4: "css"};
-
+  document.getElementById("image_div").style.display = "none";
   for(let i=1; i<5; i++)
   {
     console.log(exercises[i]);
@@ -39,7 +39,7 @@ function validate_pass() {
 
 function load_slideshow() {
   let slideshow = document.getElementById("slideshow");
-  let images = document.getElementById("images");
+  let images = document.getElementById("image_div");
   slideshow.style.display = "none";
   images.style.display = "block";
 
