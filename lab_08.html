@@ -12,7 +12,7 @@
     <a onclick="load_exercise(1)">Password Validator</a>
     <a onclick="load_exercise(2)">Slideshow</a>
     <a onclick="load_exercise(3)">Profile</a>
-    <a>CSS</a>
+    <a onclick="load_exercise(4)">CSS</a>
   </div>
   <div class="exercises" id="validator" style="display:none">
     <form id="validator_form">
@@ -20,7 +20,7 @@
       <input type="password" id="pass1">
       <label for="pass2">Validate Password:</label>
       <input type="password" id="pass2"><br>
-      <input type="submit" value="Validate" onclick="validate_pass();return false">
+      <input class="input_button" type="submit" value="Validate" onclick="validate_pass();return false">
     </form>
   </div>
   <div class="exercises" id="slideshow" style="display:none">
@@ -33,10 +33,40 @@
     <button id="previous" type="button" onclick="previous()">Previous</button>
     <button id="next" type="button" onclick="next()">Next</button>
   </div>
+  <div class="exercises" id="css" style="display:none">
+    <h1 class="title">CSS Manipulation</h1>
+    <div class="selectors">
+      <h3>Border Values (Hex)</h3>
+      <form id="selector_form">
+        <label for="border_red">Red Value  </label>
+        <input type="text"  id="border_red" placeholder="ex: 0a"><br>
+        <label for="border_green">Green Value  </label>
+        <input type="text"  id="border_green" placeholder="ex: a5"><br>
+        <label for="border_blue">Blue Value  </label>
+        <input type="text"  id="border_blue" placeholder="ex: 2d"><br>
+        <label for="border_width">Width Value  </label>
+        <input type="text"  id="border_width" placeholder="ex: 10 (integer)"><br>
+        <h3>Background Color (Hex)</h3>
+        <label for="background_red">Red Value  </label>
+        <input type="text"  id="background_red" placeholder="ex: 0aF"><br>
+        <label for="background_green">Green Value  </label>
+        <input type="text"  id="background_green" placeholder="ex: 2d"><br>
+        <label for="background_blue">Blue Value  </label>
+        <input type="text"  id="background_blue" placeholder="ex: a5"><br><br>
+        <input class="input_button" type="submit" value="Change CSS" onclick="change_css();return false">
+      </form>
+    </div>
+    <div id="css_paragraph">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
   <div class="exercises" id="profile" style="display:none">
     <h1 class="title">Linus Torvalds</h1>
     <img id="linus_img" src="./imgs/linus.jpg">
-    <div class="linus_bio">
+    <div class="paragraph_div">
       <p>Linus Benedict Torvalds is a Finnish-American software engineer who is the creator and, historically,
       the main developer of the Linux kernel as well as the source control tool, git. Linus remains an active
       maintainer on the Linux kernel and an avid supporter and vocalist for open source development.</p>

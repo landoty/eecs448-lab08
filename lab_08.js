@@ -32,6 +32,7 @@ function load_exercise(exercise)
     }
     else
     {
+      console.log(exercises[i]);
       document.getElementById(exercises[i]).style.display = "none";
     }
   }
@@ -93,4 +94,28 @@ function previous()
   }
   title.innerHTML = image_names[current_image];
   source.src = "./imgs/" + images_links[current_image];
+}
+
+function change_css()
+{
+  let form = document.getElementById("selector_form");
+  let border_color = "#";
+  let border_width = "";
+  let background_color = "#";
+  for(let i=0; i<7; i++)
+  {
+    if(i<3)
+    {
+      border_color += form.elements[i].value;
+    }
+    else if(i==3)
+    {
+      border_width = form.elements[i].value + "px";
+    }
+    else
+    {
+      background_color += form.elements[i].value;
+    }
+  }
+  document.getElementById("css_paragraph").style = "border-color:" + border_color + ";border-width:" + border_width + ";background-color:" + background_color +";";
 }

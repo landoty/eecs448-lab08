@@ -35,7 +35,7 @@ body {
   line-height: 100px;
 }
 
-.exercises button {
+.exercises button, .input_button {
   line-height: 1.5;
   display: inline-block;
   vertical-align: middle;
@@ -48,7 +48,7 @@ body {
     color: blue;
 }
 
-.linus_bio {
+.paragraph_div {
   color: #011e32;
   font-size : 20px;
   height : 200px;
@@ -74,4 +74,19 @@ body {
   padding: 50px;
   width: 800;
   height: 200;
+}
+
+.selectors {
+  float: left;
+  line-height: 2;
+}
+
+#css_paragraph {
+  height : 200px;
+  width: 800px;
+  margin: 5px;
+  float: right;
+  word-wrap : break-word;
+  line-height : 1;
+  border-style : solid;
 }
