@@ -1,3 +1,21 @@
+let images_links = {
+  1: "eaton.jpg",
+  2: "leep.jpg",
+  3: "slawson.jpg",
+  4: "structural_test.jpg",
+  5: "best.jpg"
+};
+
+let image_names = {
+  1: "Eaton",
+  2: "Leep",
+  3: "Slawson",
+  4: "Structural Testing",
+  5: "Best"
+};
+
+let current_image = 1;
+
 function load_exercise(exercise)
 {
   let exercises = {1: "validator",
@@ -43,4 +61,36 @@ function load_slideshow() {
   slideshow.style.display = "none";
   images.style.display = "block";
 
+}
+
+function next()
+{
+  image_div = document.getElementById("image_div");
+  let title = image_div.children[0];
+  let source = image_div.children[1];
+  if(current_image == 5)
+  {
+    current_image = 1;
+  }
+  else {
+    current_image++;
+  }
+  title.innerHTML = image_names[current_image];
+  source.src = "./imgs/" + images_links[current_image];
+}
+
+function previous()
+{
+  image_div = document.getElementById("image_div");
+  let title = image_div.children[0];
+  let source = image_div.children[1];
+  if(current_image == 1)
+  {
+    current_image = 5;
+  }
+  else {
+    current_image--;
+  }
+  title.innerHTML = image_names[current_image];
+  source.src = "./imgs/" + images_links[current_image];
 }

@@ -11,7 +11,7 @@
     <a class="active">Lab 08</a>
     <a onclick="load_exercise(1)">Password Validator</a>
     <a onclick="load_exercise(2)">Slideshow</a>
-    <a>Profile</a>
+    <a onclick="load_exercise(3)">Profile</a>
     <a>CSS</a>
   </div>
   <div class="exercises" id="validator" style="display:none">
@@ -29,7 +29,12 @@
   </div>
   <div class="exercises" id="image_div" style="display:none">
     <h1 class="title">Eaton Hall</h1>
-    <img id="images" src="./imgs/eaton.jpg">
+    <img id="images" src="./imgs/eaton.jpg"><br>
+    <button id="previous" type="button" onclick="previous()">Previous</button>
+    <button id="next" type="button" onclick="next()">Next</button>
+  </div>
+  <div class="exercises" id="profile" style="display:none">
+    <h1 class="title" onload="fix_styling()">Linus Torvalds</h1>
   </div>
 </body>
 </html>
