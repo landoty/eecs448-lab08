@@ -28,14 +28,12 @@ function load_exercise(exercise)
   document.getElementById("image_div").style.display = "none";
   for(let i=1; i<5; i++)
   {
-    console.log(exercises[i]);
     if(exercise == i)
     {
       document.getElementById(exercises[i]).style.display = "block";
     }
     else
     {
-      console.log(exercises[i]);
       document.getElementById(exercises[i]).style.display = "none";
     }
   }
