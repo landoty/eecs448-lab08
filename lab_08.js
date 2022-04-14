@@ -36,3 +36,11 @@ function validate_pass() {
   }
   return false;
 }
+
+function load_slideshow() {
+  let slideshow = document.getElementById("slideshow");
+  let images = document.getElementById("images");
+  slideshow.style.display = "none";
+  images.style.display = "block";
+
+}

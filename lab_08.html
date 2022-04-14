@@ -10,7 +10,7 @@
   <div class="navigation" id="navbar">
     <a class="active">Lab 08</a>
     <a onclick="load_exercise(1)">Password Validator</a>
-    <a>Slideshow</a>
+    <a onclick="load_exercise(2)">Slideshow</a>
     <a>Profile</a>
     <a>CSS</a>
   </div>
@@ -19,9 +19,16 @@
       <label for="pass1">Password:</label>
       <input type="password" id="pass1">
       <label for="pass2">Validate Password:</label>
-      <input type="password" id="pass2">
+      <input type="password" id="pass2"><br>
       <input type="submit" value="Validate" onclick="validate_pass();return false">
     </form>
+  </div>
+  <div class="exercises" id="slideshow" style="display:none">
+    <h1 id="title">KU Engineering Buildings</h1>
+    <button id="start" type="button" onclick="load_slideshow()">Start!</button>
+    <div class="exercises" id="images" style="display:none">
+
+    </div>
   </div>
 </body>
 </html>

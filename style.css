@@ -31,5 +31,19 @@ body {
 
 .exercises {
   text-align: center;
-  line-height: 500px;
+  padding: 15%;
+  line-height: 100px;
+}
+
+.exercises button {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+  border-radius: 8px;
+}
+
+#title {
+    text-align: center;
+    color: blue;
 }
