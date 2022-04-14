@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 08 - Landen Doty</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="lab_08.js"></script>
+</head>
+<body>
+  <div class="navigation" id="navbar">
+    <a class="active">Lab 08</a>
+    <a onclick="load_exercise(1)">Password Validator</a>
+    <a>Slideshow</a>
+    <a>Profile</a>
+    <a>CSS</a>
+  </div>
+  <div class="exercises" id="validator" style="display:none">
+    <form id="validator_form">
+      <label for="pass1">Password:</label>
+      <input type="password" id="pass1">
+      <label for="pass2">Validate Password:</label>
+      <input type="password" id="pass2">
+      <input type="submit" value="Validate" onclick="validate_pass();return false">
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+body {
+  background-color: lightgrey;
+}
+
+.navigation {
+  background-color: black;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  position: fixed;
+}
+
+.navigation a {
+  float: left;
+  color: lightgrey;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  background-color: lightgrey;
+  color: black;
+}
+
+.navigation a.active {
+  background-color : lightblue;
+  color : black;
+}
+
+.exercises {
+  text-align: center;
+  line-height: 500px;
+}
